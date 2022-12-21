@@ -33,6 +33,11 @@ You can also run an intuitive database UI with Prisma
 npx prisma studio
 ```
 
+You can also run unit tests for each one of the use-cases and some entities. The test framework is Jest
+```
+npm run test
+```
+
 ## Kafka
 
 To send messages to this service using Kafka, you need a Kafka producer to create the messages.
