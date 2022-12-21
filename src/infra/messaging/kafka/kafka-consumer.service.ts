@@ -10,12 +10,11 @@ export class KafkaConsumerService
     super({
       client: {
         clientId: 'notifications',
-        brokers: ['right-cheetah-12334-us1-kafka.upstash.io:9092'],
+        brokers: [`${process.env.KAFKA_BROKER}`],
         sasl: {
           mechanism: 'scram-sha-256',
-          username:
-            'cmlnaHQtY2hlZXRhaC0xMjMzNCT5WOUdolOgPmcGPLOQC8FhK8xAMCXvGNu_CKc',
-          password: `${process.env.UPSTASH_SECRET}`,
+          username: `${process.env.KAFKA_USER}`,
+          password: `${process.env.KAFKA_PASSWORD}`,
         },
         ssl: true,
       },
