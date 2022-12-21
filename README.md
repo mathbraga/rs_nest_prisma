@@ -44,7 +44,7 @@ I recommend following this [guide](https://kafka.js.org/docs/producing#producing
 ##### ```POST /notifications```
 
 Request body
-```
+```javascript
 {
   "category": "test",
   "content": "New notification test.",
@@ -53,7 +53,7 @@ Request body
 ```
 
 Response: newly created notification
-```
+```javascript
 {
   "id": "some-unique-id",
   "category": "test",
@@ -71,7 +71,7 @@ None
 ```
 
 Response
-```
+```javascript
 {
   "count": number
 }
@@ -86,7 +86,7 @@ None
 ```
 
 Response
-```
+```javascript
 {
   "notifications": [
     {
@@ -101,7 +101,7 @@ Response
 ```
 
 #### Cancel a notification (set 'canceledAt' field)
-##### ```PATCH /notifications/:notificationID/cancel```
+##### ```PATCH /notifications/:notificationId/cancel```
 
 Request body
 ```
@@ -114,7 +114,7 @@ None
 ```
 
 #### Read a notification (set 'readAt' field)
-##### ```PATCH /notifications/:notificationID/read```
+##### ```PATCH /notifications/:notificationId/read```
 
 Request body
 ```
@@ -127,7 +127,7 @@ None
 ```
 
 #### Unread a notification (set 'readAt' = null)
-##### ```PATCH /notifications/:notificationID/unread```
+##### ```PATCH /notifications/:notificationId/unread```
 
 Request body
 ```
@@ -138,3 +138,8 @@ Response
 ```
 None
 ```
+
+## License
+Released in 2022.
+
+This project is under the [MIT License](https://github.com/mathbraga/rs_nest_prisma/blob/main/LICENSE).
