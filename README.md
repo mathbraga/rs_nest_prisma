@@ -1,5 +1,5 @@
 ## About
 
-This project is a notification redirection service that receives data in the form of notifications and fowards it to a designated destination.
+This project is an api for a notification redirection service that receives data in the form of notifications and fowards it to a designated destination.
 
 It was built using NestJS, Prisma and SQLite.
